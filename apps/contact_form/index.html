@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz kontakowy</title>
+
+    <!-- Import stylu do formularza -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="mailer">
+        <form id='mail' method='post' class="mail" action="contact.php">
+
+            <label for='email'>Podaj swój e-mail <span>*</span></label>
+            <input type='text' name='email' id='email' placeholder='Wpisz swój e-mail' />
+
+            <label for='message'>Wiadomość</label>
+            <textarea placeholder="Wpisz treść swojego zlecenia" id="message" name='message' class="message"></textarea>
+
+            <input type='submit' name='Submit' value='Wyślij' class="submit" />
+            <input type="text" name="hidden" class="hidden" value="">
+
+        </form>
+    </div>
+</body>
+
+</html>

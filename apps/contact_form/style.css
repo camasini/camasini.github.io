@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+label {
+    padding: 10px 0 10px 0;
+}
+
+input {
+    padding: 6px;
+    font-size: 0.8em;
+    outline: none;
+    border: none;
+}
+
+.message {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    padding: 6px 6px;
+    height: 200px;
+    outline: none;
+    border: none;
+}
+
+.mailer {
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.mail {
+    width: 400px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #f3f3f3;
+}
+
+.submit {
+    background-color: #C8D43B;
+    border: none;
+    margin: 20px 0 20px 0;
+}
+
+.submit:hover {
+    background-color: #E7BF13;
+    cursor: pointer;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+/* error color: #D04127 */
