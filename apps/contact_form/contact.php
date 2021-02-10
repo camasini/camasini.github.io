@@ -1,18 +1,21 @@
 <?php
 
 // Firs part of e-mail
-$var_1 =  "pawel.muzyka@";
+$address1 =  "pawel.muzyka@";
 // Second part of e-mail
-$var_2 = "interia.pl";
-$join_var = $var_1." ".$var_2." ";
-$to = $join_var;
+$address2 = "interia.pl";
+$address12 = $address1." ".$address2." ";
+$to = $address12;
 $id = uniqid();
 $subject = "Nowe zlecenie #{$id}";
 $email_from = $_POST["email"];
 $content = $_POST["message"];
 $test = $_POST["message"];
 // You must create your mail on domain where you host site. Otherwise message from customer willn't send or going to SPAM
-$from = 'biuro@nesca.pl';
+$address3 =  "biuro@";
+$address4 = "nesca.pl";
+$address34 = $address3." ".$address4." ";
+$from = $address34;
 $data = date("Y-m-d H:i:s");
 $message = "Wiadomość ze strony nesca.pl {$data}\r\n \r\n{$content}";
 $headers .= 'From: '.$email_from.'<'.$from.'>' . "\r\n"; 
