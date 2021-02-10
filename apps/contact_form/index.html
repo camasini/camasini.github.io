@@ -16,9 +16,11 @@
         <form id='mail' method='post' class="mail" action="contact.php">
 
             <label for='email'>Podaj swój e-mail <span>*</span></label>
+            <div id="mailvalidation">Error test 1</div>
             <input type='text' name='email' id='email' placeholder='Wpisz swój e-mail' />
 
             <label for='message'>Wiadomość</label>
+            <div id="messagevalidation">Error test 2</div>
             <textarea placeholder="Wpisz treść swojego zlecenia" id="message" name='message' class="message"></textarea>
 
             <input type='submit' name='Submit' value='Wyślij' class="submit" />
