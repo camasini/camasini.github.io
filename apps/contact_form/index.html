@@ -9,6 +9,7 @@
     <!-- Import stylu do formularza -->
     <link rel="stylesheet" href="style.css" type="text/css" />
 
+
 </head>
 
 <body>
@@ -17,17 +18,18 @@
 
             <label for='email'>Podaj swój e-mail <span>*</span></label>
             <div id="mailvalidation">Error test 1</div>
-            <input type='text' name='email' id='email' placeholder='Wpisz swój e-mail' />
+            <input type='text' name='email' id='email' placeholder='Wpisz swój e-mail' required />
 
             <label for='message'>Wiadomość</label>
             <div id="messagevalidation">Error test 2</div>
             <textarea placeholder="Wpisz treść swojego zlecenia" id="message" name='message' class="message"></textarea>
 
-            <input type='submit' name='Submit' value='Wyślij' class="submit" />
+            <input id='submit' type='submit' name='Submit' value='Wyślij' class="submit" />
             <input type="text" name="hidden" class="hidden" value="">
 
         </form>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
