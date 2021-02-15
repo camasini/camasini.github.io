@@ -54,6 +54,7 @@ input {
 }
 
 .submit {
+    text-align: center;
     background-color: #C8D43B;
     border: none;
     margin: 20px 0 20px 0;
@@ -105,4 +106,18 @@ input {
     width: 100%;
     height: 100vh;
 }
-/* error color: #D04127 */
+
+.mailvalidationoff {
+    display: none;
+    color: #D04127;
+}
+
+.mailvalidationon {
+    display: inline;
+    height: 20px;
+    font-size: 12px;
+}
+
+.submitafter {
+    user-select: none;
+}

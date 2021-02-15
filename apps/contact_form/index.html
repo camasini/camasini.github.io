@@ -9,23 +9,26 @@
     <!-- Import stylu do formularza -->
     <link rel="stylesheet" href="style.css" type="text/css" />
 
+
 </head>
 
 <body>
     <div class="mailer">
-        <form id='mail' method='post' class="mail" action="contact.php">
+        <form id='mail' method='post' class="mail">
 
             <label for='email'>Podaj swój e-mail <span>*</span></label>
+            <div id="mailvalidation" class='mailvalidation'></div>
             <input type='text' name='email' id='email' placeholder='Wpisz swój e-mail' />
 
-            <label for='message'>Wiadomość</label>
+            <label for=' message'>Wiadomość</label>
             <textarea placeholder="Wpisz treść swojego zlecenia" id="message" name='message' class="message"></textarea>
 
-            <input type='submit' name='Submit' value='Wyślij' class="submit" />
+            <input id='submit' name='Submit' value='Wyślij' class="submit" />
             <input type="text" name="hidden" class="hidden" value="">
 
         </form>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
